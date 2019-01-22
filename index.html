@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Foliac</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="img/ap.png">
 </head>
@@ -11,6 +13,7 @@
 	<header class="header">
 		<div class="container clearfix">
 			<img class="header__logo" src="img/foliac-logo.png" alt="Foliac">
+			<a href="#" class="header__toggler"></a>
 			<nav class="header__nav">
 				<ul>
 					<li><a href="#accueil">Accueil</a></li>
@@ -22,60 +25,98 @@
 		</div>
 	</header>
 	<main>
-        <section id="accueil" class="section section--bg section--100" style="background-image: linear-gradient(to right, rgba(60, 73, 85, .6), rgba(60, 73, 85, .6)), url('img/computer.jpg');">
-        	<div class="container">
-        	  <div class="flex text-center">
-        		<h1 class="title">voici votre prochain portfolio</h1>
-        		<h2 class="sub-title">un template psd simple et gratuit</h2>
-        		<a href="#" class="btn btn--transparent btn--green">Lorem ipsum</a>
-        	  </div>
-        	</div>
-        </section>
+        <div class="slick">
+        	<section id="accueil" class="section section--bg section--100" style="background-image: linear-gradient(to right, rgba(60, 73, 85, .6), rgba(60, 73, 85, .6)), url('img/computer.jpg');">
+                	<div class="container">
+                	  <div class="flex text-center">
+                		<h1 class="title">voici votre prochain portfolio</h1>
+                		<h2 class="sub-title">un template psd simple et gratuit</h2>
+                		<a href="#" class="btn btn--transparent btn--green">Lorem ipsum</a>
+                	  </div>
+                	</div>
+            </section>
+            <section id="" class="section section--bg section--100" style="background-image: linear-gradient(to right, rgba(60, 73, 85, .6), rgba(60, 73, 85, .6)), url('img/images.jpeg');">
+                	<div class="container">
+                	  <div class="flex text-center">
+                		<h1 class="title">voici votre prochain portfolio 2</h1>
+                		<h2 class="sub-title">un template psd simple et gratuit</h2>
+                		<a href="#" class="btn btn--transparent btn--green">Lorem ipsum</a>
+                	  </div>
+                	</div>
+            </section>
+            <section id="" class="section section--bg section--100" style="background-image: linear-gradient(to right, rgba(60, 73, 85, .6), rgba(60, 73, 85, .6)), url('img/images1.jpeg');">
+                	<div class="container">
+                	  <div class="flex text-center">
+                		<h1 class="title">voici votre prochain portfolio 3</h1>
+                		<h2 class="sub-title">un template psd simple et gratuit</h2>
+                		<a href="#" class="btn btn--transparent btn--green">Lorem ipsum</a>
+                	  </div>
+                	</div>
+            </section>
+        </div>
 	    <section id="portfolio" class="section">
 	    	<div class="container">
 	    		<ul class="filters text-center">
-	    			<li><a class="btn btn--small active" href="#">Tous les projets</a></li>
-	    			<li><a class="btn btn--small" href="#">Webdesign</a></li>
-	    			<li><a class="btn btn--small" href="#">UI/UX design</a></li>
-	    			<li><a class="btn btn--small" href="#">Illustration</a></li>
-	    			<li><a class="btn btn--small" href="#">Motion design</a></li>
+	    			<li><a class="btn btn--small active" href="#" data-filter="*">Tous les projets</a></li>
+	    			<li><a class="btn btn--small" href="#" data-filter="webdesign">Webdesign</a></li>
+	    			<li><a class="btn btn--small" href="#" data-filter="uiuxdesign">UI/UX design</a></li>
+	    			<li><a class="btn btn--small" href="#" data-filter="illustration">Illustration</a></li>
+	    			<li><a class="btn btn--small" href="#" data-filter="motiondesign">Motion design</a></li>
 	    		</ul>
 	    		<div class="items">
-	    			<div class="item">
-	    				<img class="item__img" src="img/multiple_items.jpg" alt="">
-	    				<a class="item__overlay" href="">
-	    					<div class="item__info">
-	    						<div class="item__title">Forest app</div>
-	    						<div class="item__text">application mobile</div>
+	    			<div class="item-sizer"></div>
+	    			<div class="gutter-sizer"></div>
+	    			<div class="item webdesign uiuxdesign">
+	    				<div class="item__inner">
+	    					<div class="item__img-wrap">
+	    						<img class="item__img" src="img/multiple_items.jpg" alt="">
 	    					</div>
-	    				</a>
+	    					    <a class="item__overlay" href="">
+	    					    	<div class="item__info">
+	    					    	  <div class="item__title">Forest app</div>
+	    					    	  <div class="item__text">application mobile</div>
+	    					    	</div>
+	    					    </a>
+	    				</div>
 	    			</div>
-	    			<div class="item item--wide">
-	    				<img class="item__img" src="img/prototype.jpg" alt="">
-	    				<a class="item__overlay" href="">
-	    					<div class="item__info">
-	    						<div class="item__title">Forest app</div>
-	    						<div class="item__text">application mobile</div>
+	    			<div class="item item--wide illustration motiondesign">
+	    				<div class="item__inner">
+	    					<div class="item__img-wrap">
+	    						<img class="item__img" src="img/prototype.jpg" alt="">
 	    					</div>
-	    				</a>
+	    					<a class="item__overlay" href="">
+	    					    <div class="item__info">
+	    					        <div class="item__title">Forest app</div>
+	    					    	<div class="item__text">application mobile</div>
+	    					    </div>
+	    					</a>
+	    				</div>
 	    			</div>
-	    			<div class="item item--wide item--tall">
-	    				<img class="item__img" src="img/identit_visuelle.jpg" alt="">
-	    				<a class="item__overlay" href="">
-	    					<div class="item__info">
-	    						<div class="item__title">Forest app</div>
-	    						<div class="item__text">application mobile</div>
+	    			<div class="item item--wide item--tall webdesign motiondesign">
+	    				<div class="item__inner">
+	    					<div class="item__img-wrap">
+	    						<img class="item__img" src="img/identit_visuelle.jpg" alt="">
 	    					</div>
-	    				</a>
+	    					<a class="item__overlay" href="">
+	    					    <div class="item__info">
+	    					    	<div class="item__title">Forest app</div>
+	    					    	<div class="item__text">application mobile</div>
+	    					    </div>
+	    					</a>
+	    				</div>
 	    			</div>
-	    			<div class="item item--tall">
-	    				<img class="item__img" src="img/app.jpg" alt="">
-	    				<a class="item__overlay" href="">
-	    					<div class="item__info">
-	    						<div class="item__title">Forest app</div>
-	    						<div class="item__text">application mobile</div>
+	    			<div class="item item--tall uiuxdesign illustration ">
+	    				<div class="item__inner">
+	    					<div class="item__img-wrap">
+	    						<img class="item__img" src="img/app.jpg" alt="">
 	    					</div>
-	    				</a>
+	    					<a class="item__overlay" href="">
+	    					    <div class="item__info">
+	    					    	<div class="item__title">Forest app</div>
+	    					    	<div class="item__text">application mobile</div>
+	    					    </div>
+	    					</a>
+	    			    </div>
 	    			</div>
 	    		</div>
 	    	</div>
@@ -105,6 +146,7 @@
 	    		</form>
 	    	</div>
 	    </section>
+	    <section id="map"></section>
 	</main>
 	<footer class="footer">
 		<div class="container">
@@ -113,7 +155,7 @@
 					<span class="footer__copyright"><a href="#" target="blank">Copyright © 2015 by beneggen - www.beneggen.fr</a></span>
 				</div>
 				<div class="row__item">
-					<ul class="socials text-right">
+					<ul class="socials">
 				        <li class="socials__item">
 					        <a class="socials__link" href="#" data-social="tw"></a>
 				        </li>
@@ -131,5 +173,93 @@
 			</div>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/smooth.js"></script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXUTMWWK4qZwIsU3AudvJ9UC48L9IdA8&callback=initMap"
+  type="text/javascript"></script>
+
+
+	<script>	
+		$(document).ready(function(){
+			$('.header__toggler, .header__nav a').on('click', function(evt){
+				evt.preventDefault();
+				$('body').toggleClass('menu-opened');
+			});
+
+			$('.slick').slick({
+				autoplay : true,
+				autoplaySpeed : 1000,
+				arrows : false,
+				fade : true,
+				easing : 'swing',
+				speed : 800
+			});
+		})
+
+		var isotope = $('.items').isotope({
+			itemSelector : '.item',
+			masonry : {
+				columnWidth : '.item-sizer',
+				gutter : '.gutter-sizer'
+			}
+		});
+
+		$('.filters a').on('click', function(evt){
+			evt.preventDefault();
+
+			$('.filters a').removeClass('active');
+			$(this).addClass('active');
+
+			var filter = $(this).attr('data-filter');
+			isotope.isotope({
+				filter : filter == '*' ? filter : `.${filter}`
+			})
+		})
+	</script>
+	<script>
+		var map,
+			marker;
+		var mapWrap = document.getElementById('map');
+
+		var markers = [
+		{
+			position : {lat : 48.45, lng : 35.05},
+	   		map : map,
+	   		icon : 'img/pin.png'
+		},
+		{
+			position : {lat : 48.25, lng : 35.45},
+	   		map : map,
+	   		icon : 'img/pin.png'
+		},
+		{
+			position : {lat : 48.35, lng : 35.15},
+	   		map : map,
+	   		icon : 'img/pin.png'
+		}
+		]
+
+		function initMap() {
+   		map = new google.maps.Map(mapWrap, {
+   			center : {lat : 48.27, lng : 35.1},
+   			zoom : 10
+   		});
+
+	   	markers.forEach(function(marker){
+	   		new google.maps.Marker({
+	   		position : marker.position,
+	   		map : map,
+	   		icon : marker.icon
+	   	   })	
+   		});
+
+  }
+	</script>
 </body>
 </html>
